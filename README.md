@@ -32,7 +32,7 @@ Or in your Gemfile:
 That is all for now. Please help creating the other [Redmine API methods](http://www.redmine.org/projects/redmine/wiki/Rest_api).
 
 
-## Contributing to ranbanery
+## Contributing to redmine-ruby
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
