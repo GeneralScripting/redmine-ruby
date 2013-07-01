@@ -1,5 +1,7 @@
 # redmine-ruby
 
+[![Gem Version](https://badge.fury.io/rb/redmine-ruby.png)](http://badge.fury.io/rb/redmine-ruby)
+[![Code Climate](https://codeclimate.com/github/GeneralScripting/redmine-ruby.png)](https://codeclimate.com/github/GeneralScripting/redmine-ruby)
 
 ## Installation
 
