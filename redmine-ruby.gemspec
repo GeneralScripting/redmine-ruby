@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "redmine-ruby"
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jan Schwenzien"]
-  s.date = "2013-07-01"
+  s.date = "2013-08-01"
   s.description = "Ruby Redmine Client using Her"
   s.email = "jan@general-scripting.com"
   s.extra_rdoc_files = [
@@ -30,6 +30,8 @@ Gem::Specification.new do |s|
     "lib/redmine-ruby/issue.rb",
     "lib/redmine-ruby/middleware/xml_parser.rb",
     "lib/redmine-ruby/project.rb",
+    "lib/redmine-ruby/time_entry.rb",
+    "lib/redmine-ruby/upload.rb",
     "redmine-ruby.gemspec",
     "test/helper.rb",
     "test/test_redmine-ruby.rb"

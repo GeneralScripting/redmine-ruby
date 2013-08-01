@@ -12,6 +12,10 @@ doc
 # bundler
 .bundle
 
+# rvm
+.ruby-version
+.ruby-gemset
+
 # jeweler generated
 pkg
 
@@ -28,7 +32,7 @@ pkg
 #
 # For MacOS:
 #
-#.DS_Store
+.DS_Store
 
 # For TextMate
 #*.tmproj
