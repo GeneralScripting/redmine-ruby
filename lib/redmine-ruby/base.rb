@@ -14,7 +14,11 @@ module Redmine
     end
 
     def self.parse(data)
-      data.keys.include?(root_element) ? data[root_element] : data
+      if data.respond_to?(:keys)
+        data.keys.include?(root_element) ? data[root_element] : data
+      else
+        data
+      end
     end
 
   end
