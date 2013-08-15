@@ -3,6 +3,7 @@ require 'her'
 require 'multi_xml'
 require 'redmine-ruby/middleware/xml_parser.rb'
 
+require 'redmine-ruby/exception.rb'
 require 'redmine-ruby/base.rb'
 require 'redmine-ruby/project.rb'
 require 'redmine-ruby/issue.rb'

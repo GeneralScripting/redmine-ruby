@@ -17,7 +17,7 @@ module Redmine
       if data.respond_to?(:keys)
         data.keys.include?(root_element) ? data[root_element] : data
       else
-        data
+        raise Redmine::Exception, data.kind_of?(Array) ? data.join(', ') : data 
       end
     end
 
