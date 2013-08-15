@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "redmine-ruby"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jan Schwenzien"]
-  s.date = "2013-08-01"
+  s.date = "2013-08-15"
   s.description = "Ruby Redmine Client using Her"
   s.email = "jan@general-scripting.com"
   s.extra_rdoc_files = [
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "lib/redmine-ruby.rb",
     "lib/redmine-ruby/base.rb",
     "lib/redmine-ruby/custom_field.rb",
+    "lib/redmine-ruby/exception.rb",
     "lib/redmine-ruby/issue.rb",
     "lib/redmine-ruby/middleware/xml_parser.rb",
     "lib/redmine-ruby/project.rb",
@@ -39,11 +40,11 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/GeneralScripting/redmine-ruby"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.25"
+  s.rubygems_version = "2.0.0"
   s.summary = "Ruby Redmine Client using Her"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<her>, [">= 0"])
