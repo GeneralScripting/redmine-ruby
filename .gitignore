@@ -5,6 +5,9 @@ coverage.data
 # rdoc generated
 rdoc
 
+# Gem Relics
+*.gem
+
 # yard generated
 doc
 .yardoc

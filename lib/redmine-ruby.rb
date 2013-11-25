@@ -11,6 +11,10 @@ require 'redmine-ruby/upload.rb'
 require 'redmine-ruby/time_entry.rb'
 
 module Redmine
+
+  autoload :CustomField, 'redmine-ruby/customer_field'
+  autoload :Upload, 'redmine-ruby/upload'
+
   class Client
     attr_accessor :url, :token, :api
 
@@ -41,6 +45,10 @@ module Redmine
 
     def projects
       resource(:project)
+    end
+
+    def custom_fields
+      resource(:custom_fields)
     end
 
     def issues

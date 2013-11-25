@@ -5,12 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "redmine-ruby"
-  s.version = "0.2.1"
+  s.version = File.read('./VERSION')
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jan Schwenzien"]
   s.date = "2013-08-15"
   s.description = "Ruby Redmine Client using Her"
+  s.description = "Ruby Redmine API Client that uses Her"
   s.email = "jan@general-scripting.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",

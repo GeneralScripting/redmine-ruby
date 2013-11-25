@@ -1,6 +1,6 @@
 module Redmine
   class CustomField < Base
-    #collection_path "projects/:project_id/issues.xml"
-    #resource_path "projects/:project_id/issues/:id.xml"
+    collection_path "custom_fields.xml"
+    resource_path ""
   end
 end
