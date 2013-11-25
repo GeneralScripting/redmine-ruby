@@ -9,12 +9,10 @@ require 'redmine-ruby/project.rb'
 require 'redmine-ruby/issue.rb'
 require 'redmine-ruby/upload.rb'
 require 'redmine-ruby/time_entry.rb'
+require 'redmine-ruby/version.rb'
+require 'redmine-ruby/custom_field.rb'
 
 module Redmine
-
-  autoload :VERSION, 'redmin-ruby/version'
-  autoload :CustomField, 'redmine-ruby/customer_field'
-  autoload :Upload, 'redmine-ruby/upload'
 
   class Client
     attr_accessor :url, :token, :api
