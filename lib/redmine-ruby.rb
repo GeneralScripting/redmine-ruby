@@ -12,6 +12,7 @@ require 'redmine-ruby/time_entry.rb'
 
 module Redmine
 
+  autoload :VERSION, 'redmin-ruby/version'
   autoload :CustomField, 'redmine-ruby/customer_field'
   autoload :Upload, 'redmine-ruby/upload'
 
