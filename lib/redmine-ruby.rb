@@ -17,6 +17,7 @@ require 'redmine-ruby/issue_category.rb'
 require 'redmine-ruby/tracker.rb'
 
 module Redmine
+  VERSION = "0.2.7"
 
   class Client
     attr_accessor :url, :token, :api
