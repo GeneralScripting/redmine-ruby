@@ -50,6 +50,10 @@ module Redmine
       resource(:enumeration)
     end
 
+    def issue_statuses
+      resource(:issue_status)
+    end
+
     def trackers
       resource(:trackers)
     end
