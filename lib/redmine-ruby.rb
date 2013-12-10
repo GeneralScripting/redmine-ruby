@@ -46,6 +46,14 @@ module Redmine
       resource(:project)
     end
 
+    def enumerations
+      resource(:enumeration)
+    end
+
+    def trackers
+      resource(:trackers)
+    end
+
     def custom_fields
       resource(:custom_fields)
     end
