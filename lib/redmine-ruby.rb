@@ -14,6 +14,7 @@ require 'redmine-ruby/custom_field.rb'
 require 'redmine-ruby/issue_status.rb'
 require 'redmine-ruby/enumeration.rb'
 require 'redmine-ruby/issue_category.rb'
+require 'redmine-ruby/tracker.rb'
 
 module Redmine
 
@@ -62,15 +63,19 @@ module Redmine
     end
 
     def trackers
-      resource(:trackers)
+      resource(:tracker)
     end
 
     def custom_fields
-      resource(:custom_fields)
+      resource(:custom_field)
     end
 
     def issues
       resource(:issue)
+    end
+
+    def versions
+      resource(:version)
     end
 
     def uploads
