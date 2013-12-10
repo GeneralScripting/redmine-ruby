@@ -11,6 +11,9 @@ require 'redmine-ruby/upload.rb'
 require 'redmine-ruby/time_entry.rb'
 require 'redmine-ruby/version.rb'
 require 'redmine-ruby/custom_field.rb'
+require 'redmine-ruby/issue_status.rb'
+require 'redmine-ruby/enumeration.rb'
+require 'redmine-ruby/issue_category.rb'
 
 module Redmine
 
@@ -52,6 +55,10 @@ module Redmine
 
     def issue_statuses
       resource(:issue_status)
+    end
+
+    def issue_categories
+      resource(:issue_category)
     end
 
     def trackers
