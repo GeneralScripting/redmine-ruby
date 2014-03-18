@@ -1,3 +1,11 @@
+PATH
+  remote: .
+  specs:
+    redmine-ruby (0.2.7)
+      faraday_middleware
+      her
+      multi_xml
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -12,30 +20,32 @@ GEM
       tzinfo (~> 0.3.37)
     atomic (1.1.10)
     builder (3.1.4)
-    faraday (0.8.8)
+    diff-lcs (1.2.5)
+    faraday (0.8.9)
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
-    git (1.2.5)
     her (0.6.8)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       faraday (~> 0.8)
       multi_json (~> 1.7)
     i18n (0.6.4)
-    jeweler (1.8.4)
-      bundler (~> 1.0)
-      git (>= 1.2.5)
-      rake
-      rdoc
-    json (1.8.0)
+    json (1.8.1)
     minitest (4.7.5)
     multi_json (1.7.7)
-    multi_xml (0.5.4)
+    multi_xml (0.5.5)
     multipart-post (1.2.0)
-    rake (10.1.0)
-    rdoc (3.12.2)
+    rdoc (4.1.1)
       json (~> 1.4)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.8)
+    rspec-expectations (2.14.5)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.6)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
       shoulda-matchers (>= 1.4.1, < 3.0)
@@ -50,10 +60,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (>= 1.0.0)
-  faraday_middleware
-  her
-  jeweler (~> 1.8.4)
-  multi_xml
-  rdoc (~> 3.12)
-  shoulda
+  bundler (>= 1.0)
+  rdoc (~> 4.1)
+  redmine-ruby!
+  rspec (~> 2.14)
+  shoulda (~> 3.5)

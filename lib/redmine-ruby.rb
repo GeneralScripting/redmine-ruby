@@ -17,18 +17,20 @@ require 'redmine-ruby/issue_category.rb'
 require 'redmine-ruby/tracker.rb'
 
 module Redmine
-  VERSION = "0.2.7"
+  VERSION = "0.2.8"
 
   class Client
-    attr_accessor :url, :token, :api
+    attr_accessor :url, :token, :api, :debug
 
-    def initialize(url, token)
+    def initialize(url, token, debug=false)
       self.url    = url
       self.token  = token
       self.api = Her::API.new
+      self.debug = debug
       self.api.setup url: url, ssl: { verify: false } do |c|
         c.use Faraday::Request::BasicAuthentication, token, ''
         c.use Faraday::Request::UrlEncoded
+        c.use Faraday::Response::Logger if debug
         c.use Redmine::Middleware::XmlParser
         c.use Faraday::Adapter::NetHttp
       end
