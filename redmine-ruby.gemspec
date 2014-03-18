@@ -18,38 +18,24 @@ Gem::Specification.new() do |s|
     "LICENSE.txt",
     "README.md"
   ]
-  s.files = [
-    ".document",
-    "Gemfile",
-    "Gemfile.lock",
-    "LICENSE.txt",
-    "README.md",
-    "Rakefile",
-    "VERSION",
-    "lib/redmine-ruby.rb",
-    "lib/redmine-ruby/base.rb",
-    "lib/redmine-ruby/custom_field.rb",
-    "lib/redmine-ruby/exception.rb",
-    "lib/redmine-ruby/issue.rb",
-    "lib/redmine-ruby/middleware/xml_parser.rb",
-    "lib/redmine-ruby/project.rb",
-    "lib/redmine-ruby/time_entry.rb",
-    "lib/redmine-ruby/upload.rb",
-    "redmine-ruby.gemspec",
-    "test/helper.rb",
-    "test/test_redmine-ruby.rb"
-  ]
+
+  s.files = `git ls-files`.split($/)
+  s.test_files = s.files.grep(%r{^(spec|features)})
+
   s.homepage = "http://github.com/GeneralScripting/redmine-ruby"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.25"
   s.summary = "Ruby Redmine Client using Her"
 
-  s.add_runtime_dependency(%q<her>, [">= 0"])
-  s.add_runtime_dependency(%q<faraday_middleware>, [">= 0"])
-  s.add_runtime_dependency(%q<multi_xml>, [">= 0"])
-  s.add_development_dependency(%q<shoulda>, [">= 0"])
-  s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
-  s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
+  s.add_runtime_dependency 'her', '>= 0'
+  s.add_runtime_dependency 'faraday_middleware', '>= 0'
+  s.add_runtime_dependency 'multi_xml', '>= 0'
+
+  s.add_development_dependency 'bundler', '>= 1.0'
+  s.add_development_dependency 'rdoc', '~> 4.1'
+  s.add_development_dependency 'rspec', '~> 2.14'
+  s.add_development_dependency 'shoulda', '~> 3.5'
+
 end
 
